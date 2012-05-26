@@ -1,0 +1,6 @@
+*.swp
+*.pyc
+files/*
+status.db
+
+!.gitignore

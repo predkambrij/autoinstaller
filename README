@@ -1,0 +1,25 @@
+Install fabric (apt-get install fabric)
+Help from autoinstaller:
+cd to source directory (which contains fabfile.py) and then read
+
+fab help
+fab prerequirements
+
+====================================================
+Prerequirements on server side (side of this script):
+apt-get install sqlite3
+sqlite3 status.db
+sqlite> .exit
+
+Prerequirements for continoue deploy:
+install debian / ubuntu
+install ssh server (apt-get install openssh-server)
+sshkeygen ...
+cd ~/.ssh
+mv id_rsa.pub authorized_keys
+scp id_rsa to fabric server
+rm id_rsa
+===================================================
+
+See examples in fabfile.py for deployment
+
